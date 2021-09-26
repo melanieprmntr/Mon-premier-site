@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Nous contacter</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header>
+    <h1 class="header-title">Développeur Web</h1>
+    <nav class="navbar">
+      <a href="index.html">Accueil</a>
+      <a href="heroes.html">Les plus connus</a>
+      <a href="definition.html">Définition</a>
+      <a href="formations.html">Formations</a>
+      <a href="numbers.html">Chiffres clés</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    </header>
+    <div class="container">
+      <main >
+      <h2 >Vous voulez en apprendre plus ? Contactez-nous!</h2>
+      <form class="contact">
+        <div>
+          <label id="sexe">Civilité :</label>
+          <br>
+          <select name="sexe" id="sexe">
+            <option> Madame</option>
+            <option>Monsieur</option>
+          </select>
+        </div>
+        <div>
+          <label for="Nom"> Nom :</label>
+          <br>
+          <input type="text" name="name" id="Nom" />
+        </div>
+        <div>
+          <label for="firstname"> Prénom :</label>
+          <br>
+          <input type="text" name="first name" id="firstname" />
+        </div>
+        <div>
+          <label for="Email"> Email :</label>
+          <br>
+          <input
+            type="email"
+            name="email"
+            id="Email"
+            placeholder="contact@demo.com"
+            required
+          />
+        </div>
+        <div>
+          <label for="message"> Message :</label>
+          <br>
+          <textarea id="message" name="message"></textarea>
+        </div>
+        <div>
+          <label for="fileinput">Pièce jointe</label>
+          <br>
+          <input type="file" name="file" id="fileinput" />
+        </div>
+        <div>
+          <input type="reset" value="Annuler" />
+          <input type="submit" value="Envoyer" />
+        </div>
+      </form>
+    </main>
+  </div>
+
+    <!-- connect the javascript file-->
+    <script src="script.js"></script>
+    <footer>
+      réalisé par Mélanie Parmentier
+    </footer>
+
+  </body>
+</html>
+

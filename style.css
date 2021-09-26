@@ -1,0 +1,216 @@
+@font-face{
+  font-family: "LobsterTwo";
+  src: url("fonts/LobsterTwo-Regular.otf") format("opentype");
+  font-weight: 400;
+}
+
+@font-face{
+  font-family:"LobsterTwo";
+  src: url("fonts/LobsterTwo-Bold.otf") format("opentype");
+  font-weight: 700;
+}
+
+html, body{
+  box-sizing: border-box;
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  display:flex;
+  flex-direction: column;
+  font-family: "LobsterTwo";
+  font-size: 18px;
+}
+
+header{
+  display:block;
+  justify-content: center;
+  background-image: url(images/matrix.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*padding: 10px;*/
+ /* min-height: 80px;*/
+ height: auto;
+}
+
+header h1{
+  
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  color: white;
+  margin-top: 0;
+  margin-left: 0;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  
+}
+
+.navbar a {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.navbar a:hover{
+  text-decoration: underline;
+}
+
+.container{
+  display:block;
+  padding: 0 15px;
+  text-align: justify;
+  border: 1px solid transparent;
+  height: auto;
+  margin: 0 auto;
+  max-width: 1080px;
+}
+
+main {
+  padding:10px;
+  flex: 1 0 auto;
+}
+
+#web {
+  display: flex;
+  justify-content: center;
+}
+
+h2{
+  text-align: center;
+}
+
+footer {
+  flex:none;
+  margin-top: auto;
+  padding-left: 10px;
+  background: rgba( 22,122,1, .4)
+}
+
+.index-img img{
+  display: flex; 
+  flex-wrap: wrap;
+  width: calc(100% + 20px);
+  margin-left: -1Opx;
+  margin-right: -10px;
+}
+
+.index-img :hover{
+  transform: scale(1.05);
+}
+
+.heroes{
+  overflow: hidden;
+}
+
+
+.img{
+  float: left;
+  padding-right: 10px;
+}
+
+section{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.intro{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  animation: SlideGoLeft 15s infinite;
+  width:calc(100% + 20px);
+
+}
+
+
+
+@keyframes SlideGoLeft{
+  from {
+    transform:translateX(550px);
+    }
+  to{
+    transform:translateX(0);
+  }  
+}
+
+.intro img:hover{
+  transform:scale(1.4);
+}
+
+.numbers img{
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% + 20px);
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.numbers :hover{
+  transform: scale(1.05);
+}
+
+.table{
+  border: medium solid transparent;
+  text-align: center;
+  padding: 5px;
+  margin-top: 20px;
+  width: calc(100% + 20px);
+  margin-left:-10px;
+  margin-right:-10px;
+}
+
+.table td, th{
+  border: thin solid #6495ed;
+}
+
+.table tr {
+  width: 100%;
+}
+
+.table-title{
+  padding: 10px 0;
+} 
+
+.contact{
+  background-image: url(images/chat.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: auto;
+  color: white;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  
+}
+
+blockquote{
+  position: relative;
+  background: rgba( 0,0,0,0.1);
+  padding: 10px;
+  text-align: center;
+}
+
+blockquote::before{
+content: '❝';
+position: absolute;
+left: 300px;
+top: -10px;
+font-size: 20px;
+}
+
+blockquote::after{
+  content:'❞';
+  position: absolute;
+  right: 30px;
+  bottom: -15px;
+  font-size: 20px;
+  
+}
